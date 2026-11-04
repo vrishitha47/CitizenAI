@@ -1,0 +1,15 @@
+# Optional upgrade: real zero-shot detection with OpenAI CLIP.
+#
+# Installing these turns on the ClipZeroShotDetector automatically (the service
+# detects them at startup and prefers CLIP over the heuristic engine). No
+# training or labelled dataset is needed — open_clip downloads pretrained
+# weights (~350 MB) on first run.
+#
+#   pip install -r requirements.txt
+#   pip install -r requirements-ml.txt
+#
+# CPU is fine for demo volumes. For GPU, install the CUDA build of torch from
+# https://pytorch.org instead of the line below.
+
+torch==2.2.2
+open_clip_torch==2.24.0
